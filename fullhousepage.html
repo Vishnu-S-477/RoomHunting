@@ -13,11 +13,13 @@
        }
        .main-container{
         height:auto;
-        max-width:600px;
+         width:400px;
+         padding:5px;
         width:100%;
         border:2px solid red;
         display:flex;
         flex-direction:column;
+        box-sizing: border-box;
        }
       .filter-main-container{
         height:150px;
@@ -120,20 +122,30 @@
        @media only screen and (max-width: 430px) {
         .main-container{
         height:auto;
-        max-width:767px;
+        width:auto;
+        padding:10px;
+       
        }
        .image-description-container{
         display:flex;
         flex-direction: column;
+        box-sizing: border-box;
       }
       .image-container{
         width:100%;
       }
       .description-main{
         width:100%;
+        box-sizing: border-box;
       }
       .description-main{
        padding:0;
+      }
+      .values1,.values2,.values3,.values4,.values5,.values6,.values7,.values8,.values9{
+        font-size:15px;
+      }
+      .option{
+        font-size:10px;
       }
       }
 
