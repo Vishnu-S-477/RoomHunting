@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullHouse</title>
+    <style>
+       body{
+        display:flex;
+        justify-content:center;
+        margin:0;
+        padding:0;
+       }
+       .main-container{
+        height:auto;
+        max-width:600px;
+        width:100%;
+        border:2px solid red;
+        display:flex;
+        flex-direction:column;
+       }
+      .filter-main-container{
+        height:150px;
+        width:100%;
+      }
+      .content-page{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+      }
+      .specific-main-container{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        height:auto;
+      }
+      .address-container{
+        min-height:40px;
+        background-color: lightseagreen;
+        height:auto;
+        width:100%;
+        padding:10px;
+        box-sizing: border-box;
+      }
+      .amount-detail-container{
+        display:flex;
+        width:100%;
+        height:auto;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        box-sizing: border-box;
+      }
+      .rent-detail,.deposit-container,.squarefeet-container{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        height:50px;
+      }
+      .image-description-container{
+        height:auto;
+        width:100%;
+        border:2px solid grey;
+        display:flex;
+      }
+      .image-container{
+        height:100%;
+        width:50%;
+      }
+      .image-style{
+        height:100%;
+        width:100%;
+      }
+      .description-main{
+        width:50%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        padding:15px;
+        
+      }
+      .description-container{
+        display:grid;
+       grid-template-columns:1fr 1fr;
+       row-gap:5px;
+       column-gap:5px;
+        border:2px solid green;
+      }
+      .furnish-container,.apartment-container,.allowedtenants-container,.homeavailable-container,.parking-detail-container,.metro-detail-container{
+        border:2px solid red;
+      }
+      .option{
+        font-family:arial;
+        font-size:1.18vw;
+        color:gray;
+      }
+      .values1,.values2,.values3,.values4,.values5,.values6,.values7,.values8,.values9{
+        font-size:1.5vw;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-bottom:4px;
+      }
+      .buttons{
+        height:auto;
+        width:100%;
+       margin-top:5px;
+      }
+       .owner-button-container{
+        height:50px;
+        width:100%;
+        border:none;
+        background-color:rgb(233, 60, 60);
+        color:white;
+        font-family:arial;
+        font-size:18px;
+        padding:2px 5px;
+        border-radius:5px;
+        
+       }
+       @media only screen and (max-width: 430px) {
+        .main-container{
+        height:auto;
+        max-width:767px;
+       }
+       .image-description-container{
+        display:flex;
+        flex-direction: column;
+      }
+      .image-container{
+        width:100%;
+      }
+      .description-main{
+        width:100%;
+      }
+      .description-main{
+       padding:0;
+      }
+      }
+
+
+    </style>
+</head>
+<body>
+   <div class="main-container">
+    <div class="filter-main-container">
+        this is left content
+           </div>
+    <div class="content-page">
+        <div class="specific-main-container">
+            <address class="address-container">
+                address
+                
+            </address>
+            <div class="amount-detail-container">
+                <div class="rent-detail">
+                  <div class="values7">&#8377;<span>4500</span></div>
+                  <div class="option">Rent()</div>
+                </div>
+                <div class="deposit-container">
+                    <div class="values8">&#8377;<span>50000</span></div>
+                  <div class="option">Deposit</div>
+                </div>
+                <div class="squarefeet-container">
+                    <div class="values9"><span>6500</span>sqft</div>
+                  <div class="option">Builtup</div>
+                </div>
+            </div>
+    
+            <div class="image-description-container">
+                <div class="image-container">
+                    <img src="bg.jpg" class="image-style">
+                </div>
+    
+    
+                <div class="description-main">
+                <div class="description-container">
+                    <div class="furnish-container">
+                        <div class="values1">Semi</div>
+                        <div class="option">Furnish</div>
+                    </div>
+                    <div class="apartment-container">
+                        <div class="values2">2BHK 2bhk 2bhk</div>
+                        <div class="option">Apartment type</div>
+                    </div>
+    
+    
+                    <div class="allowedtenants-container">
+                        <div class="values3">Family</div>
+                        <div class="option">EligibleTenants</div>
+                    </div>
+    
+    
+                    <div class="homeavailable-container">
+                        <div class="values4">Ready</div>
+                        <div class="option">House Status</div>
+                    </div>
+    
+    
+                    <div class="parking-detail-container">
+                        <div class="values5">4wheller</div>
+                        <div class="option">Parking Status</div>
+                    </div>
+    
+    
+                    <div class="metro-detail-container">
+                        <div class="values6">2km</div>
+                        <div class="option">metro facility</div>
+                    </div>
+    
+    
+                </div>
+                   <div class="buttons">
+                    <button class="owner-button-container">Get Owner Details</button>
+                  </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
